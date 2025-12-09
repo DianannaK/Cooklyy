@@ -1,21 +1,16 @@
-import { createLocalizedPathnames, createRouter, createRedirect } from "next-intl/navigation";
+import { createI18nMiddleware } from "next-intl/middleware";
 
 export const locales = ["et", "en", "ru"] as const;
 export const defaultLocale = "et";
 
-export const pathnames = createLocalizedPathnames({
-  "/": "/",
-  "/retseptid": "/retseptid",
-  "/admin": "/admin",
-  "/login": "/login",
-  "/register": "/register",
+export default createI18nMiddleware({
+  locales,
+  defaultLocale
 });
 
-export const routing = {
-  locales,
-  defaultLocale,
-  pathnames,
+export const config = {
+  // match kõik teed mis tuleb locale-ga
+  matcher: [
+    '/((?!_next|.*\\..*).*)'
+  ]
 };
-
-export const { Link, redirect, useRouter, usePathname } = createRouter(routing);
-export const { redirect: redirectWithLocale } = createRedirect(routing);

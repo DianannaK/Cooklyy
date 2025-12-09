@@ -1,14 +1,21 @@
-import { createI18nRouting } from "next-intl/routing";
+import { createLocalizedPathnames, createRouter, createRedirect } from "next-intl/navigation";
 
-export const routing = createI18nRouting({
-  locales: ["et", "en", "ru"],
-  defaultLocale: "et"
+export const locales = ["et", "en", "ru"] as const;
+export const defaultLocale = "et";
+
+export const pathnames = createLocalizedPathnames({
+  "/": "/",
+  "/retseptid": "/retseptid",
+  "/admin": "/admin",
+  "/login": "/login",
+  "/register": "/register",
 });
 
-// NEED tulevad routingust, MITTE configist
-export const {
-  Link,
-  redirect,
-  usePathname,
-  useRouter
-} = routing;
+export const routing = {
+  locales,
+  defaultLocale,
+  pathnames,
+};
+
+export const { Link, redirect, useRouter, usePathname } = createRouter(routing);
+export const { redirect: redirectWithLocale } = createRedirect(routing);

@@ -1,28 +1,14 @@
-import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
+import { createServerClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 
 export async function GET(request: Request) {
-    const requestUrl = new URL(request.url);
-    const code = requestUrl.searchParams.get('code');
-    const locale = requestUrl.pathname.split('/')[1] || 'et';
+  const cookieStore = cookies();
 
-    if (code) {
-        const cookieStore = cookies();
-        const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
+  const supabase = createServerClient({
+    cookies: () => cookieStore,
+  });
 
-        await supabase.auth.exchangeCodeForSession(code);
-    }
-
-    // URL to redirect to after sign in process completes
-    return NextResponse.redirect(`${requestUrl.origin}/${locale}`);
-}
-import { createServerClient } from '@supabase/auth-helpers-nextjs';
-import { cookies } from 'next/headers';
-
-export async function GET(request: Request) {
-  const supabase = createServerClient({ cookies });
-
-  // pane siia oma ülejäänud kood, kui sul oli midagi
-  return new Response("OK");
+  // After successful login, redirect to homepage
+  return NextResponse.redirect(new URL('/', request.url));
 }

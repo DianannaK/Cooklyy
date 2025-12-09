@@ -1,0 +1,94 @@
+{
+    "hero": {
+        "title": "Maitsed, mis kõnetavad.",
+        "subtitle": "Avasta retsepte, loo oma digitaalne retseptiraamat ja osta vajalikud koostisosad ühe klikiga.",
+        "view_recipes": "Vaata retsepte",
+        "add_recipe": "Lisa oma retsept",
+        "join": "Liitu Cooklyga"
+    },
+    "stats": {
+        "recipes": "retsepti",
+        "users": "liitunud kasutajat"
+    },
+    "footer": {
+        "legal_title": "Õiguslik teave",
+        "privacy": "Privaatsuspoliitika",
+        "terms": "Kasutustingimused",
+        "faq": "KKK",
+        "contact_title": "Kontaktinfo",
+        "email": "info@eestimaitsed.ee",
+        "phone": "+372 123 4567",
+        "location": "Tallinn, Eesti",
+        "social_title": "Jälgi meid"
+    },
+    "nav": {
+        "home": "Avaleht",
+        "recipes": "Retseptid",
+        "blog": "Blogi",
+        "contact": "Kontakt",
+        "admin": "Admin",
+        "login": "Logi sisse",
+        "logout": "Logi välja",
+        "add_recipe": "Lisa retsept"
+    },
+    "common": {
+        "search": "Otsi retsepti..."
+    },
+    "categories": {
+        "Kõik": "Kõik",
+        "Vegan": "Vegan",
+        "Mereannid": "Mereannid",
+        "Kiire toit": "Kiire toit",
+        "Magustoidud": "Magustoidud",
+        "Pasta": "Pasta",
+        "Linnuliha": "Linnuliha",
+        "Liha": "Liha",
+        "Kala": "Kala",
+        "Salatid": "Salatid",
+        "Supp": "Supp",
+        "Tervislik": "Tervislik",
+        "Eesti köök": "Eesti köök",
+        "Itaalia": "Itaalia",
+        "Aasia": "Aasia",
+        "Ameerika": "Ameerika"
+    },
+    "toast": {
+        "recipe_added": "Retsept edukalt lisatud!",
+        "saved_favorite": "Salvestatud lemmikutesse",
+        "removed_favorite": "Eemaldatud lemmikutest",
+        "added_to_list": "Lisatud ostunimekirja",
+        "logged_in": "Kontole sisse logitud",
+        "quantities_updated": "Kogused uuendatud",
+        "pdf_downloaded": "PDF allalaaditud"
+    },
+    "auth": {
+        "login": "Logi sisse",
+        "register": "Loo konto",
+        "logout": "Logi välja",
+        "email": "E-mail",
+        "password": "Parool",
+        "confirm_password": "Kinnita parool",
+        "name": "Nimi",
+        "forgot_password": "Unustasid parooli?",
+        "reset_password": "Taasta parool",
+        "send_reset_link": "Saada taastamislink",
+        "continue_google": "Jätka Google'iga",
+        "continue_facebook": "Jätka Facebookiga",
+        "no_account": "Pole veel kontot?",
+        "has_account": "Konto juba olemas?",
+        "or": "või",
+        "login_success": "Oled edukalt sisse logitud!",
+        "register_success": "Konto loodud! Palun kontrolli oma e-posti.",
+        "reset_sent": "Taastamislink saadetud sinu e-postile.",
+        "error_generic": "Midagi läks valesti. Palun proovi uuesti.",
+        "welcome_back": "Tere tulemast tagasi!",
+        "create_account": "Loo uus konto"
+    },
+    "blog": {
+        "title": "Meie Blogi",
+        "subtitle": "Loe uusimaid toidutrende, nippe ja retsepte meie köögist.",
+        "read_more": "Loe lähemalt",
+        "close": "Sulge",
+        "read_time": "min lugemist"
+    }
+}

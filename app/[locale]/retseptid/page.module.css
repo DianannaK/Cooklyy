@@ -1,0 +1,125 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #12141B;
+}
+
+.filterBar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+.filterPill {
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    border: 1px solid #E2E8F0;
+    background: white;
+    color: #64748B;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.filterPill:hover {
+    border-color: #FF7A00;
+    color: #FF7A00;
+}
+
+.filterPill.active {
+    background: #FF7A00;
+    color: white;
+    border-color: #FF7A00;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0f0;
+}
+
+.content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #FF7A00;
+    background: #FFF5EB;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+}
+
+.cardTitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #12141B;
+}
+
+.description {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}

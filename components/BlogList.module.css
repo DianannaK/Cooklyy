@@ -1,0 +1,77 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+    padding: 40px;
+}
+
+.card {
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 12px #00000022;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: #00000088;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 30px;
+    max-width: 700px;
+    border-radius: 14px;
+    width: 90%;
+}
+
+.modalContent img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.modalContent h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modalContent p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.modalContent button {
+    padding: 10px 20px;
+    background: #FF4B4B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}

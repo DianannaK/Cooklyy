@@ -1,0 +1,71 @@
+{
+    "hero": {
+        "title": "Flavors that speak.",
+        "subtitle": "Discover recipes, create your digital cookbook and purchase ingredients in one click.",
+        "view_recipes": "View recipes",
+        "add_recipe": "Add your recipe",
+        "join": "Join Cookly"
+    },
+    "stats": {
+        "recipes": "recipes",
+        "users": "joined users"
+    },
+    "footer": {
+        "legal_title": "Legal Information",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "faq": "FAQ",
+        "contact_title": "Contact Info",
+        "email": "info@eestimaitsed.ee",
+        "phone": "+372 123 4567",
+        "location": "Tallinn, Estonia",
+        "social_title": "Follow Us"
+    },
+    "nav": {
+        "home": "Home",
+        "recipes": "Recipes",
+        "blog": "Blog",
+        "contact": "Contact",
+        "admin": "Admin",
+        "login": "Log in",
+        "logout": "Log out",
+        "add_recipe": "Add recipe"
+    },
+    "common": {
+        "search": "Search recipes..."
+    },
+    "categories": {
+        "Kõik": "All",
+        "Vegan": "Vegan",
+        "Mereannid": "Seafood",
+        "Kiire toit": "Fast Food",
+        "Magustoidud": "Desserts",
+        "Pasta": "Pasta",
+        "Linnuliha": "Poultry",
+        "Liha": "Meat",
+        "Kala": "Fish",
+        "Salatid": "Salads",
+        "Supp": "Soup",
+        "Tervislik": "Healthy",
+        "Eesti köök": "Estonian Kitchen",
+        "Itaalia": "Italian",
+        "Aasia": "Asian",
+        "Ameerika": "American"
+    },
+    "toast": {
+        "recipe_added": "Recipe successfully added!",
+        "saved_favorite": "Saved to favorites",
+        "removed_favorite": "Removed from favorites",
+        "added_to_list": "Added to shopping list",
+        "logged_in": "Logged in successfully",
+        "quantities_updated": "Quantities updated",
+        "pdf_downloaded": "PDF downloaded"
+    },
+    "blog": {
+        "title": "Our Blog",
+        "subtitle": "Read the latest food trends, tips, and recipes from our kitchen.",
+        "read_more": "Read more",
+        "close": "Close",
+        "read_time": "min read"
+    }
+}

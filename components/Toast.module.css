@@ -1,0 +1,77 @@
+.container {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.toast {
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    animation: slideIn 0.3s ease, fadeOut 0.3s ease 2.7s forwards;
+    min-width: 250px;
+    border-left: 4px solid transparent;
+}
+
+.success {
+    border-left-color: #10B981;
+}
+
+.success::before {
+    content: '✓';
+    color: #10B981;
+    font-weight: 800;
+}
+
+.error {
+    border-left-color: #EF4444;
+}
+
+.error::before {
+    content: '✕';
+    color: #EF4444;
+    font-weight: 800;
+}
+
+.info {
+    border-left-color: #3B82F6;
+}
+
+.info::before {
+    content: 'ℹ';
+    color: #3B82F6;
+    font-weight: 800;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

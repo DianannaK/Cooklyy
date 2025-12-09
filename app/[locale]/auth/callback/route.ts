@@ -17,3 +17,12 @@ export async function GET(request: Request) {
     // URL to redirect to after sign in process completes
     return NextResponse.redirect(`${requestUrl.origin}/${locale}`);
 }
+import { createServerClient } from '@supabase/auth-helpers-nextjs';
+import { cookies } from 'next/headers';
+
+export async function GET(request: Request) {
+  const supabase = createServerClient({ cookies });
+
+  // pane siia oma ülejäänud kood, kui sul oli midagi
+  return new Response("OK");
+}

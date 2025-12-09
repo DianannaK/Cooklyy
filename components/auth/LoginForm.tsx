@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { createBrowserClient } from "@supabase/auth-helpers-nextjs";
 
@@ -19,33 +18,18 @@ export default function LoginForm() {
 
     const { error } = await supabase.auth.signInWithPassword({
       email,
-      password,
+      password
     });
 
-    if (error) {
-      setError(error.message);
-    }
+    if (error) setError(error.message);
   }
 
   return (
     <form onSubmit={handleLogin}>
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-
-      <button type="submit">Log in</button>
-
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      <input value={email} onChange={(e) => setEmail(e.target.value)} />
+      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+      {error && <p>{error}</p>}
+      <button type="submit">Logi sisse</button>
     </form>
   );
 }

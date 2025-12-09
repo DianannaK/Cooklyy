@@ -9,8 +9,7 @@ export default createI18nMiddleware({
 });
 
 export const config = {
-  // match kõik teed mis tuleb locale-ga
   matcher: [
-    '/((?!_next|.*\\..*).*)'
+    "/((?!_next|.*\\..*).*)"
   ]
 };

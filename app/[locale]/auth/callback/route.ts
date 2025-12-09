@@ -17,7 +17,7 @@ export async function GET(request: Request) {
     }
   );
 
-  // Make Supabase refresh session
+  // refresh session after login
   await supabase.auth.getSession();
 
   return NextResponse.redirect(new URL("/", request.url));

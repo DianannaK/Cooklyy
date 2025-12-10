@@ -10,7 +10,6 @@ export async function generateRecipe(dishName: string, servings: number): Promis
         title: dishName,
         description: `Maitsev ja kodune ${dishName.toLowerCase()}, mis valmib kiirelt ja lihtsalt. Ideaalne roog ${servings} inimesele.`,
         servings: servings,
-        imageUrl: '/images/hero-bg.jpg', // Placeholder image
         ingredients: [
             { name: 'Peamine koostisosa', amount: 500, unit: 'g' },
             { name: 'Köögivili', amount: 200, unit: 'g' },

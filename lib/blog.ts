@@ -7,6 +7,7 @@ import html from "remark-html";
 const postsDirectory = path.join(process.cwd(), "content/blog");
 
 export interface BlogPost {
+  slug: string;
     slug: string;
     title: string;
     excerpt: string;

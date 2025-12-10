@@ -3,15 +3,27 @@ import { createServerClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 
 export async function GET(request: Request) {
+  const cookieStore = await cookies();
+
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
-      cookies
+      cookies: {
+        get(name: string) {
+          return cookieStore.get(name)?.value;
+        }
+      }
     }
   );
 
-  await supabase.auth.exchangeCodeForSession(request);
+  const {
+    data: { session }
+  } = await supabase.auth.getSession();
 
-  return NextResponse.redirect("/");
+  if (session) {
+    return NextResponse.redirect(new URL("/", request.url));
+  }
+
+  return NextResponse.redirect(new URL("/auth/login", request.url));
 }

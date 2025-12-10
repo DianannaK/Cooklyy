@@ -135,7 +135,6 @@ function generateSlug(title: string): string {
         .replace(/\s+/g, '-') + '-' + Math.floor(Math.random() * 1000);
 }
 
-function generateContent(category: string): string {
     const intro = INTROS[Math.floor(Math.random() * INTROS.length)];
     const body1 = BODY_PARAGRAPHS[Math.floor(Math.random() * BODY_PARAGRAPHS.length)];
     const body2 = BODY_PARAGRAPHS[Math.floor(Math.random() * BODY_PARAGRAPHS.length)];
@@ -163,7 +162,6 @@ for (let i = 0; i < 50; i++) {
     ALL_POSTS.push({ 
         id: idCounter.toString(),
         content: content,
-        category: category as Category
     });
     idCounter++;
 }

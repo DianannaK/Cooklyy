@@ -150,7 +150,7 @@ function generateSlug(title: string): string {
 
     const content = "";
 
-    ALL_POSTS.push({ id: idCounter.toString(), title: "", slug: idCounter.toString(), content: content, image: "",
+    ALL_POSTS.push({ id: idCounter.toString(), slug: idCounter.toString(), title: "", excerpt: "", content: content, imageUrl: "", readTime: 3, category: category });
         id: idCounter.toString(),
         content: content,
     });

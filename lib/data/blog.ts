@@ -1,3 +1,5 @@
+let idCounter = 1;
+
 const ALL_POSTS: BlogPost[] = [];
 
 import { BlogPost } from '@/types/blog';

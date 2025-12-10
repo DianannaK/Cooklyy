@@ -106,7 +106,6 @@ export default function ProfilePage() {
                         </Link>
                         {myRecipes.map(recipe => (
                             <Link key={recipe.id} href={`/retseptid/${recipe.id}`} className={styles.card}>
-                                <div className={styles.cardImage} style={{ backgroundImage: `url(${recipe.imageUrl})` }} />
                                 <div className={styles.cardContent}>
                                     <h3>{recipe.title}</h3>
                                     <div className={styles.cardActions}>
@@ -123,7 +122,6 @@ export default function ProfilePage() {
                     <div className={styles.grid}>
                         {favorites.map(recipe => (
                             <Link key={recipe.id} href={`/retseptid/${recipe.id}`} className={styles.card}>
-                                <div className={styles.cardImage} style={{ backgroundImage: `url(${recipe.imageUrl})` }} />
                                 <div className={styles.cardContent}>
                                     <h3>{recipe.title}</h3>
                                     <button className={styles.removeBtn}>Eemalda lemmikutest</button>

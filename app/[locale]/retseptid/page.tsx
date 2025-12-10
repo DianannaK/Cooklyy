@@ -64,7 +64,6 @@ export default function RecipesPage() {
                     <Link key={recipe.id} href={`retseptid/${recipe.id}`} className={styles.card}>
                         <div
                             className={styles.image}
-                            style={{ backgroundImage: `url(${recipe.imageUrl})` }}
                         />
                         <div className={styles.content}>
                             <div className={styles.cardTags}>

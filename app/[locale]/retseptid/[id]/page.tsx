@@ -95,7 +95,6 @@ export default function RecipeDetailPage({ params }: { params: Promise<{ id: str
 
             <div
                 className={styles.hero}
-                style={{ backgroundImage: `url(${recipe.imageUrl})` }}
             >
                 <div className={styles.heroOverlay}>
                     <div className={styles.tags}>

@@ -9,7 +9,6 @@ export interface Recipe {
     title: string;
     description: string;
     servings: number;
-    imageUrl: string;
     ingredients: Ingredient[];
     steps: string[];
     categories: string[];

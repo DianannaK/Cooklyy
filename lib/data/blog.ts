@@ -1,5 +1,5 @@
-let idCounter = 1;
-let idCounter = 1;
+# let idCounter = 1;
+# let idCounter = 1;
 
 const ALL_POSTS: BlogPost[] = [];
 

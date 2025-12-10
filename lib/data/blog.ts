@@ -163,7 +163,6 @@ for (let i = 0; i < 50; i++) {
 
     ALL_POSTS.push({ 
         id: idCounter.toString(),
-        
         title: title,
         excerpt: content.slice(0, 150) + '...',
         content: content,

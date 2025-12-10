@@ -142,7 +142,6 @@ function generateSlug(title: string): string {
     const conclusion = CONCLUSIONS[Math.floor(Math.random() * CONCLUSIONS.length)];
 
     return `${intro}\n\n${body1}\n\n${category} on teema, mis pakub lõputult avastamisrõõmu. ${body2}\n\n${body3}\n\n${conclusion}`;
-}
 
 const ALL_POSTS: BlogPost[] = [];
 const categoriesList = Object.keys(CATEGORY_IMAGES);

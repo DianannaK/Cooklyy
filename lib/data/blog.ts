@@ -159,7 +159,7 @@ for (let i = 0; i < 50; i++) {
 
     const content = "";
 
-    ALL_POSTS.push({ id: idCounter.toString(), title: "", slug: idCounter.toString(), content: content, image: "",  
+    ALL_POSTS.push({ id: idCounter.toString(), title: "", slug: idCounter.toString(), content: content, image: "",
         id: idCounter.toString(),
         content: content,
     });

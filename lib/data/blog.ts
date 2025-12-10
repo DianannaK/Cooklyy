@@ -161,7 +161,7 @@ for (let i = 0; i < 50; i++) {
 
     const content = generateContent(category);
 
-    ALL_POSTS.push({
+    ALL_POSTS.push({ slug: generateSlug(title),
         id: idCounter.toString(),
         slug: generateSlug(title),
         title: title,

@@ -1,4 +1,4 @@
-import { createI18nMiddleware } from "next-intl/middleware";
+import createI18nMiddleware from "next-intl/middleware";
 
 export const locales = ["et", "en", "ru"] as const;
 export const defaultLocale = "et";

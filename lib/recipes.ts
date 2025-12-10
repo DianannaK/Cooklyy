@@ -253,7 +253,7 @@ categoriesList.forEach(category => {
                 carbs: 20 + Math.floor(Math.random() * 60),
                 fat: 5 + Math.floor(Math.random() * 30)
             },
-            imageUrl: image,
+            image: image,
             categories: [category as Category],
             ingredients: ingredients,
             steps: generateSteps(category)

@@ -144,7 +144,7 @@ function generateSlug(title: string): string {
     const body3 = BODY_PARAGRAPHS[Math.floor(Math.random() * BODY_PARAGRAPHS.length)];
     const conclusion = CONCLUSIONS[Math.floor(Math.random() * CONCLUSIONS.length)];
 
-    const category = categoriesList[i % categoriesList.length];
+    const category = categoriesList[Math.floor(Math.random() * categoriesList.length)];
 
     const images = CATEGORY_IMAGES[category];
     const image = images[Math.floor(Math.random() * images.length)];

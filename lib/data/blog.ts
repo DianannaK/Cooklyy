@@ -1,3 +1,5 @@
+const ALL_POSTS: BlogPost[] = [];
+
 import { BlogPost } from '@/types/blog';
 import { Category } from '@/lib/categories';
 
@@ -153,9 +155,6 @@ function generateSlug(title: string): string {
     const title = `${titleTemplate} ${category.toLowerCase()}`;
 
     const content = "";
-
-    ALL_POSTS.push({ id: idCounter.toString(), slug: idCounter.toString(), title: "", excerpt: "", content: content, imageUrl: "", readTime: 3, category: category });
-        id: idCounter.toString(),
         content: content,
     });
     idCounter++;

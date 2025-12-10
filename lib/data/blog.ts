@@ -163,7 +163,6 @@ for (let i = 0; i < 50; i++) {
 
     ALL_POSTS.push({ 
         id: idCounter.toString(),
-        excerpt: content.slice(0, 150) + '...',
         content: content,
         author: author,
         date: new Date(Date.now() - Math.floor(Math.random() * 10000000000)).toISOString().split('T')[0],

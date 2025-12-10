@@ -15,7 +15,6 @@ export interface BlogPost {
     category: string;
     coverImage: string;
     date: string;
-    author: string;
 }
 
 export function getAllPosts(): BlogPost[] {
@@ -34,7 +33,6 @@ export function getAllPosts(): BlogPost[] {
             category: data.category,
             coverImage: data.coverImage,
             date: data.date,
-            author: data.author
         } as BlogPost;
     });
 }
@@ -55,6 +53,5 @@ export async function getPostBySlug(slug: string): Promise<BlogPost> {
         category: data.category,
         coverImage: data.coverImage,
         date: data.date,
-        author: data.author
     } as BlogPost;
 }

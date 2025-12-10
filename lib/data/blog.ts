@@ -3,7 +3,7 @@ import { Category } from '@/lib/categories';
 
 // Image mappings for categories (High quality Unsplash images)
 // Using the same high-quality images as recipes for consistency and visual appeal
-const categoriesList = Object.keys(CATEGORY_IMAGES);
+
 const CATEGORY_IMAGES: Record<string, string[]> = {
     'Vegan': [
         'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80',
@@ -143,7 +143,7 @@ function generateSlug(title: string): string {
     const conclusion = CONCLUSIONS[Math.floor(Math.random() * CONCLUSIONS.length)];
 
     const category = categoriesList[i % categoriesList.length];
-const categoriesList = Object.keys(CATEGORY_IMAGES);
+
     const images = CATEGORY_IMAGES[category];
     const image = images[Math.floor(Math.random() * images.length)];
     const author = AUTHORS[Math.floor(Math.random() * AUTHORS.length)];

@@ -156,7 +156,6 @@ function generateSlug(title: string): string {
 
     const content = "";
         
-    });
     idCounter++;
 }
 

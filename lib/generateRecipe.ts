@@ -6,6 +6,7 @@ export async function generateRecipe(dishName: string, servings: number): Promis
 
     // Mock response based on input
     return {
+        categories: [],
         id: Math.random().toString(36).substr(2, 9),
         title: dishName,
         description: `Maitsev ja kodune ${dishName.toLowerCase()}, mis valmib kiirelt ja lihtsalt. Ideaalne roog ${servings} inimesele.`,

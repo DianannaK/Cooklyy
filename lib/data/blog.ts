@@ -163,7 +163,6 @@ for (let i = 0; i < 50; i++) {
     ALL_POSTS.push({ 
         id: idCounter.toString(),
         content: content,
-        imageUrl: image,
         category: category as Category
     });
     idCounter++;

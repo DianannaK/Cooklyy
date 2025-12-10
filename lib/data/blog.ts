@@ -82,6 +82,8 @@ const CATEGORY_IMAGES: Record<string, string[]> = {
     ]
 };
 
+const categoriesList = Object.keys(CATEGORY_IMAGES);
+
 const AUTHORS = [
     'Mari Mets', 'Jaan Tamm', 'Liis Kask', 'Peeter Paju', 'Kati Karu',
     'Andres Sepp', 'Tiina Toom', 'Marko Mägi', 'Laura Lepp', 'Siim Saar'

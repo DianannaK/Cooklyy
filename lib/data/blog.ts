@@ -157,7 +157,7 @@ for (let i = 0; i < 50; i++) {
     const titleTemplate = TITLES[Math.floor(Math.random() * TITLES.length)];
     const title = `${titleTemplate} ${category.toLowerCase()}`;
 
-    const content = generateContent(category);
+    const content = "";
 
     ALL_POSTS.push({ 
         id: idCounter.toString(),

@@ -29,8 +29,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         <span className={styles.category}>{tCats(post.category as any)}</span>
                         <h1 className={styles.title}>{post.title}</h1>
                         <div className={styles.meta}>
-                            <span>✍️ {post.author}</span>
-                            <span>📅 {post.date}</span>
                         </div>
                     </div>
                 </div>

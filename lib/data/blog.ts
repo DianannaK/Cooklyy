@@ -163,7 +163,6 @@ for (let i = 0; i < 50; i++) {
     ALL_POSTS.push({ 
         id: idCounter.toString(),
         content: content,
-        readTime: 3 + Math.floor(Math.random() * 5),
         imageUrl: image,
         category: category as Category
     });

@@ -155,7 +155,7 @@ function generateSlug(title: string): string {
     const title = `${titleTemplate} ${category.toLowerCase()}`;
 
     const content = "";
-        content: content,
+        
     });
     idCounter++;
 }

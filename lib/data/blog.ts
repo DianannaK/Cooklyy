@@ -159,7 +159,6 @@ function generateSlug(title: string): string {
     const content = "";
         
     idCounter++;
-}
 
 export function getBlogPosts(): BlogPost[] {
     return ALL_POSTS;

@@ -155,7 +155,6 @@ for (let i = 0; i < 50; i++) {
     const images = CATEGORY_IMAGES[category];
     const image = images[Math.floor(Math.random() * images.length)];
     const author = AUTHORS[Math.floor(Math.random() * AUTHORS.length)];
-
     const titleTemplate = TITLES[Math.floor(Math.random() * TITLES.length)];
     const title = `${titleTemplate} ${category.toLowerCase()}`;
 
@@ -164,7 +163,6 @@ for (let i = 0; i < 50; i++) {
     ALL_POSTS.push({ 
         id: idCounter.toString(),
         content: content,
-        author: author,
         date: new Date(Date.now() - Math.floor(Math.random() * 10000000000)).toISOString().split('T')[0],
         readTime: 3 + Math.floor(Math.random() * 5),
         imageUrl: image,
